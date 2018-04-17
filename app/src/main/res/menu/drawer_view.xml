@@ -1,21 +1,56 @@
 <?xml version="1.0" encoding="utf-8"?>
 <menu xmlns:android="http://schemas.android.com/apk/res/android">
-    <group android:checkableBehavior="single">
+
+    <group android:id="@+id/nav_group_main"
+           android:checkableBehavior="single">
+
         <item
-            android:id="@+id/nav_camera"
+            android:id="@+id/nav_inbox"
+            android:checked="true"
             android:icon="@drawable/ic_notifications_black_24dp"
-            android:title="@string/app_name" />
+            android:title="@string/menu_item_inbox" />
         <item
-            android:id="@+id/nav_gallery"
+            android:id="@+id/nav_today"
             android:icon="@drawable/ic_notifications_black_24dp"
-            android:title="@string/app_name" />
+            android:title="@string/menu_item_today" />
         <item
-            android:id="@+id/nav_slideshow"
+            android:id="@+id/nav_plans"
             android:icon="@drawable/ic_notifications_black_24dp"
-            android:title="@string/app_name" />
+            android:title="@string/menu_item_plans" />
         <item
-            android:id="@+id/nav_manage"
+            android:id="@+id/nav_someday"
             android:icon="@drawable/ic_notifications_black_24dp"
-            android:title="@string/app_name" />
+            android:title="@string/menu_item_someday" />
+
+        <item
+            android:id="@+id/nav_journal"
+            android:icon="@drawable/ic_notifications_black_24dp"
+            android:title="@string/menu_item_journal" />
     </group>
+
+    <group android:id="@+id/nav_group_projects"
+        android:checkableBehavior="single">
+
+                <item
+                    android:id="@+id/nav_share33"
+                    android:icon="@drawable/ic_notifications_black_24dp"
+                    android:title="Share" />
+                <item
+                    android:id="@+id/nav_send1111"
+                    android:icon="@drawable/ic_notifications_black_24dp"
+                    android:title="Send" />
+                <item
+                    android:id="@+id/nav_send11113"
+                    android:icon="@drawable/ic_notifications_black_24dp"
+                    android:title="Send" />
+                <item
+                    android:id="@+id/nav_send11115"
+                    android:icon="@drawable/ic_notifications_black_24dp"
+                    android:title="Send" />
+                <item
+                    android:id="@+id/nav_send11117"
+                    android:icon="@drawable/ic_notifications_black_24dp"
+                    android:title="Send" />
+    </group>
+
 </menu>

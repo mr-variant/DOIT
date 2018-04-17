@@ -1,3 +1,25 @@
 <resources>
-    <string name="app_name">DO IT</string>
+    <string name="app_name">JUST DO IT</string>
+    <string name="sing_in_label">DO IT login</string>
+
+    <string name="googleConnectionFailed">Ошибка сервисов Гугл.</string>
+    <string name="loading">Загрузка&#8230; Пожалуйста подождите.</string>
+
+    <string name="menu_title_projects">Projects</string>
+
+    <string name="menu_item_inbox">Inbox</string>
+    <string name="menu_item_today">Today</string>
+    <string name="menu_item_plans">Plans</string>
+    <string name="menu_item_someday">Someday</string>
+    <string name="menu_item_journal">Journal</string>
+    <string name="menu_group_title">My projects</string>
+
+    <string name="menu_item_add_new_list">New list</string>
+
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+
+
+
 </resources>
