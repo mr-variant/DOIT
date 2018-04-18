@@ -89,14 +89,15 @@ public class MainActivity extends AppCompatActivity {
                     }
                 });
 
+        navigationView.setItemIconTintList(null);
+
         Intent intent = getIntent();
         String userEmail = intent.getStringExtra("userEmail");
         String userName = intent.getStringExtra("userName");
 
 
-        View header = navigationView.getHeaderView(0);
-        TextView emailTextView  = (TextView) header.findViewById(R.id.emailTextView);
-        TextView nameTextView  = (TextView) header.findViewById(R.id.nameTextView);
+        TextView emailTextView  = (TextView) findViewById(R.id.emailTextView);
+        TextView nameTextView  = (TextView) findViewById(R.id.nameTextView);
 
         emailTextView.setText(userEmail);
         nameTextView.setText(userName);

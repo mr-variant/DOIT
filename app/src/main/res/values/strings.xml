@@ -13,6 +13,10 @@
     <string name="menu_item_someday">Someday</string>
     <string name="menu_item_journal">Journal</string>
     <string name="menu_group_title">My projects</string>
+    <string name="menu_group_settings">Settings</string>
+
+    <string name="nav_add_list_btn">New list</string>
+    <string name="nav_search_btn">Search</string>
 
     <string name="menu_item_add_new_list">New list</string>
 

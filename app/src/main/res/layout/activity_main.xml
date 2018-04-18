@@ -4,7 +4,7 @@
     android:id="@+id/drawer_layout"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:fitsSystemWindows="true">
+    >
 
 
     <!-- Layout to contain contents of main body of screen (drawer will slide over this) -->
@@ -20,31 +20,28 @@
             android:background="?attr/colorPrimary"
             android:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar" />
 
-
     </FrameLayout>
 
     <!-- Container for contents of drawer - use NavigationView to make configuration easier -->
-    <android.support.design.widget.NavigationView
+    <android.support.design.widget.NavigationView xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
         android:id="@+id/nav_view"
         android:layout_width="wrap_content"
         android:layout_height="match_parent"
         android:layout_gravity="start"
-        android:fitsSystemWindows="true"
+        android:clipToPadding="false"
+        android:paddingTop="150dp"
+        android:paddingBottom="50dp"
         app:menu="@menu/drawer_view"
-        app:headerLayout="@layout/nav_header">
+        >
 
-        <Button
-            android:id="@+id/btn_sing_in"
-            android:layout_width="match_parent"
-            android:layout_height="50dp"
-            android:layout_gravity="bottom"
-            android:backgroundTint="@color/colorPrimary"
-            android:drawableLeft="@drawable/ic_notifications_black_24dp"
-            android:text="@string/menu_item_add_new_list" />
+
+        <include layout="@layout/nav_header"/>
+
+        <include layout="@layout/nav_footer"/>
+
 
     </android.support.design.widget.NavigationView>
-
-
 
 
 </android.support.v4.widget.DrawerLayout>
