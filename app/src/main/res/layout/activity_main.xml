@@ -20,7 +20,17 @@
             android:background="?attr/colorPrimary"
             android:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar" />
 
+        <android.support.design.widget.FloatingActionButton
+            android:id="@+id/fab"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="end|bottom"
+            android:src="@drawable/ic_plus_symbol"
+            android:layout_margin="16dp" />
+
     </FrameLayout>
+
+
 
     <!-- Container for contents of drawer - use NavigationView to make configuration easier -->
     <android.support.design.widget.NavigationView xmlns:android="http://schemas.android.com/apk/res/android"
@@ -41,7 +51,9 @@
         <include layout="@layout/nav_footer"/>
 
 
+
     </android.support.design.widget.NavigationView>
+
 
 
 </android.support.v4.widget.DrawerLayout>

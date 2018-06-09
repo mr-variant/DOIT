@@ -118,7 +118,6 @@ public class SingInActivity extends AppCompatActivity implements
             Intent intent = new Intent(SingInActivity.this, MainActivity.class);
             intent.putExtra("userEmail", user.getEmail());
             intent.putExtra("userName", user.getDisplayName());
-            intent.putExtra("userPhotoUrl", user.getPhotoUrl());
 
             startActivity(intent);
         }
@@ -192,9 +191,6 @@ public class SingInActivity extends AppCompatActivity implements
 
                                                     Map<String, Object> userMap = new HashMap<>();
 
-                                                    userMap.put("nickname", "User");
-                                                    userMap.put("experience", 0);
-                                                    userMap.put("satiation", 0);
                                                     userMap.put("dateCreatedAccount", new Date());
 
                                                     FirebaseFirestore.getInstance().collection("Users").document(userUID).set(userMap).addOnSuccessListener(new OnSuccessListener<Void>() {
